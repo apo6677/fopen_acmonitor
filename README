@@ -1,0 +1,16 @@
+logger.c:
+All information is found and stored at log file, as asked.
+
+test_aclog:
+It gives the user the option to encrypt entries before the are stored at log file by typing 1. In order to make sure that all antries are encrypted there is an appropriate flag at looger.c
+that has to be refreshed. You have to continue to type 1 because looger.c is closed and opened whenever ther is a fopen or a fwrite in test_aclog.
+About the encryption process, the path name and the digital fingerprint are never encrypted.
+
+acmonitor:
+Did not have time to make.
+
+test_aclog:
+File is unchanged.
+
+makfile:
+added the compilation of gmp library as it was needed for the implementation of entry encryption.
